@@ -1,5 +1,6 @@
 # Project related
 datasets
+cache
 pre_trained
 !anomalib/datasets
 results
@@ -16,6 +17,7 @@ notebooks/500_use_cases/501_dobot/
 .python-version
 .anomalib
 .toxbase
+.venv
 
 # IDE
 .vscode
@@ -48,6 +50,7 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+anomalib/anomalib/anomalib/
 
 # PyInstaller
 #  Usually these files are written by a python script from a template

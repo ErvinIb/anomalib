@@ -1,0 +1,20 @@
+# sample script to show grid search for two categories
+accelerator:
+  - cpu
+metrics:
+  pixel:
+    - AUROC
+  image:
+    - AUROC
+benchmark:
+  seed: 0
+  model:
+    class_path:
+      grid: [Fastflow]
+  data:
+    class_path: MVTec
+    init_args:
+      category:
+        grid:
+          - toothbrush
+      image_size: [256, 256]
