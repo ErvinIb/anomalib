@@ -1,9 +1,9 @@
 class_path: anomalib.data.MVTec
 init_args:
   root: ./datasets/MVTec
-  category: bottle
-  train_batch_size: 32
-  eval_batch_size: 32
+  category: toothbrush
+  train_batch_size: 16
+  eval_batch_size: 16
   num_workers: 8
   task: segmentation
   transform: null

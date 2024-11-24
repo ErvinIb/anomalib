@@ -1,7 +1,10 @@
+#accelerator: "gpu"
+
 model:
   class_path: anomalib.models.Patchcore
   init_args:
     backbone: wide_resnet50_2
+    #bakcbone: resnet18
     layers:
       - layer2
       - layer3

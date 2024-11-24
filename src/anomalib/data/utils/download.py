@@ -231,7 +231,8 @@ def safe_extract(tar_file: TarFile, root: Path, members: list[TarInfo]) -> None:
     for member in members:
         # check if the file already exists
         if not (root / member.name).exists():
-            tar_file.extract(member, root, filter="data")
+            #tar_file.extract(member, root, filter="data") # filter does not exist in python 3.9
+            tar_file.extract(member, root)
 
 
 def generate_hash(file_path: str | Path, algorithm: str = "sha256") -> str:

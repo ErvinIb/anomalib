@@ -30,7 +30,7 @@ from .image import (
     Rkde,
     Stfpm,
     Uflow,
-    VlmAd,
+    #VlmAd,
     WinClip,
 )
 from .video import AiVad
